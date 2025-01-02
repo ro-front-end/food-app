@@ -77,6 +77,6 @@ export function deleteMealFromDb(slug) {
     console.error("Error deleting meal", error);
     return false;
   }
-
+}
 // Inicializa los datos
 initData();
