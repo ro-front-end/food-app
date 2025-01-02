@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import DeleteButton from "../Ui/deleteButton";
 
 export default function MealItem({ title, slug, image, summary, creator }) {
   return (
@@ -14,7 +15,10 @@ export default function MealItem({ title, slug, image, summary, creator }) {
       </header>
       <div className="flex flex-col justify-between flex-1 px-2 py-4">
         <div>
-          <h2 className="text-2xl font-semibold text-orange-50">{title}</h2>
+          <div className="flex justify-between">
+            <h2 className="text-2xl font-semibold text-orange-50">{title}</h2>
+            {/* <DeleteButton slug={slug} /> */}
+          </div>
           <p className="text-md italic text-orange-100 opacity-30">
             by {creator}
           </p>

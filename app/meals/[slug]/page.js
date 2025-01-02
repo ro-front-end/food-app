@@ -53,12 +53,12 @@ export default async function MealDetailsPage({ params }) {
       <p className="text-lg text-orange-100 opacity-60 px-6 mb-12 md:px-10 xl:px-64">
         {meal.summary}
       </p>
-      <section className="text-orange-100 mb-12 px-4 md:px-10 xl:px-64 md:text-lg">
+      <main className="text-orange-100 mb-12 px-4 md:px-10 xl:px-64 md:text-lg">
         <p
           className="text-md bg-orange-900 bg-opacity-10 p-10 rounded-3xl"
           dangerouslySetInnerHTML={{ __html: meal.instructions }}
         ></p>
-      </section>
+      </main>
     </>
   );
 }
